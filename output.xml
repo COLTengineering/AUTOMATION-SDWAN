@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180207 15:05:21.322" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/sathish123/PycharmProjects/NOVITAS/csit/suites/PING_TEST.robot" id="s1" name="PING TEST">
+<kw type="setup" name="Start_Suite" library="Resource">
+<doc>Make connecection to Versa devices</doc>
+<kw name="Make Connection">
+<arguments>
+<arg>${cpe20}</arg>
+</arguments>
+<assign>
+<var>${net_connect}</var>
+</assign>
+<msg timestamp="20180207 15:05:21.427" level="FAIL">No keyword with name 'Make Connection' found.</msg>
+<status status="FAIL" endtime="20180207 15:05:21.427" starttime="20180207 15:05:21.427"></status>
+</kw>
+<status status="FAIL" endtime="20180207 15:05:21.428" starttime="20180207 15:05:21.423"></status>
+</kw>
+<test id="s1-t1" name="PING">
+<tags>
+<tag>ping</tag>
+</tags>
+<status status="FAIL" endtime="20180207 15:05:21.428" critical="yes" starttime="20180207 15:05:21.428">Parent suite setup failed:
+No keyword with name 'Make Connection' found.</status>
+</test>
+<kw type="teardown" name="Stop_Suite" library="Resource">
+<doc>Close connection - Versa devices</doc>
+<kw name="close connection">
+<arguments>
+<arg>${net_connect}</arg>
+</arguments>
+<msg timestamp="20180207 15:05:21.433" level="FAIL">No keyword with name 'close connection' found.</msg>
+<status status="FAIL" endtime="20180207 15:05:21.433" starttime="20180207 15:05:21.433"></status>
+</kw>
+<status status="FAIL" endtime="20180207 15:05:21.433" starttime="20180207 15:05:21.429">No keyword with name 'close connection' found.</status>
+</kw>
+<doc>A test suite with tests for SDWAN LAN conenctivity.
+Topology:-
+____________________________
+| VersaDirector |
+|___________________________|
+|
+|
+|
+_____________|_______________
+| WanCtrller1 |
+|____________________________|
+| |
+| |
+| |
+INTERNET/MPLS
+| |
+| |___
+______|__ ___|___
+| | | |
+LAN1--+ CPE1 | | CPE2 +--LAN1
+|________| |_______|
+
+
+Testplan Goals:-
+1. Get LAN interface from Device.
+2. Get Routing-instance of the Lan interface.
+3. Get Subnet of the Lan interface.
+4. Get Host-ip of the Routing-instance.
+5. Get BGP routes from Routing-instance.
+6. Get Destination IP from BGP routes.
+7. Do Ping to Destination IP with source-ip and routing-instance.</doc>
+<metadata>
+<item name="Version">1.0
+More Info For more information about Robot Framework see http://robotframework.org
+Author Sathishkumar murugesan
+Date 12 Dec 2017
+Executed At HOST
+Test Framework Robot Framework Python</item>
+</metadata>
+<status status="FAIL" endtime="20180207 15:05:21.433" starttime="20180207 15:05:21.324">Suite setup failed:
+No keyword with name 'Make Connection' found.
+
+Also suite teardown failed:
+No keyword with name 'close connection' found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">ping</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="PING TEST" pass="0">PING TEST</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180207 15:05:21.405" level="ERROR">Error in file '/home/sathish123/PycharmProjects/NOVITAS/csit/suites/PING_TEST.robot': Importing test library '/home/sathish123/PycharmProjects/NOVITAS/csit/libraries/Connect_devices.py' failed: ImportError: No module named csit.Topology.devices
+Traceback (most recent call last):
+  File "/home/sathish123/PycharmProjects/NOVITAS/csit/libraries/Connect_devices.py", line 8, in &lt;module&gt;
+    from csit.Topology.devices import cpe19,cpe20
+PYTHONPATH:
+  /home/sathish123/PycharmProjects/NOVITAS/csit/libraries
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/mininet-2.3.0d1-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/robotframework_ride-1.5.2-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/PyYAML-3.12-py2.7-linux-x86_64.egg
+  /usr/local/lib/python2.7/dist-packages/scp-0.10.2-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/robotframework_aristalibrary-1.0-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/netmiko-1.5.0-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/stcrestclient-1.7.3-py2.7.egg
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /home/sathish123/.local/lib/python2.7/site-packages
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/python2.7/dist-packages/wx-3.0-gtk2</msg>
+<msg timestamp="20180207 15:05:21.422" level="ERROR">Error in file '/home/sathish123/PycharmProjects/NOVITAS/csit/libraries/Resource.robot': Importing test library '/home/sathish123/PycharmProjects/NOVITAS/csit/libraries/Connect_devices.py' failed: ImportError: No module named csit.Topology.devices
+Traceback (most recent call last):
+  File "/home/sathish123/PycharmProjects/NOVITAS/csit/libraries/Connect_devices.py", line 8, in &lt;module&gt;
+    from csit.Topology.devices import cpe19,cpe20
+PYTHONPATH:
+  /home/sathish123/PycharmProjects/NOVITAS/csit/libraries
+  /home/sathish123/PycharmProjects/NOVITAS/csit/libraries
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/mininet-2.3.0d1-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/robotframework_ride-1.5.2-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/PyYAML-3.12-py2.7-linux-x86_64.egg
+  /usr/local/lib/python2.7/dist-packages/scp-0.10.2-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/robotframework_aristalibrary-1.0-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/netmiko-1.5.0-py2.7.egg
+  /usr/local/lib/python2.7/dist-packages/stcrestclient-1.7.3-py2.7.egg
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /home/sathish123/.local/lib/python2.7/site-packages
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/python2.7/dist-packages/wx-3.0-gtk2</msg>
+</errors>
+</robot>

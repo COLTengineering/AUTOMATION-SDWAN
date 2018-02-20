@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180216 10:53:47.447" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/sathish123/PycharmProjects/NOVITAS/csit/suites/SANITY_TEST.robot" id="s1" name="SANITY TEST">
+<kw type="setup" name="Start_Suite" library="Resource">
+<doc>Make connecection to Versa devices</doc>
+<kw name="Make Connection" library="Connect_devices">
+<arguments>
+<arg>${cpe2}</arg>
+</arguments>
+<assign>
+<var>${cpe2_connection_id}</var>
+</assign>
+<msg timestamp="20180216 10:53:48.042" level="DEBUG">Adding ssh-rsa host key for 10.91.116.253: d54591669c401dc647ae7783d3dd8482</msg>
+<msg timestamp="20180216 10:53:48.077" level="DEBUG">[chan 0] Max packet in: 32768 bytes</msg>
+<msg timestamp="20180216 10:53:49.183" level="DEBUG">read_channel:              .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                     ___ _    _____  ___   ___  _ ___
+                                    | __| |  | __\ \/ | \ / / \| | __|
+                                    | _|| |__| _| &gt;  &lt; \ V /| .` | _|
+                                    |_| |____|___/_/\_\ \_/ |_|\_|_|
+
+
+Versa FlexVNF software
+Release     :	16.1R1 (S3.3)
+Release date:	20171107
+Package ID  :	e51d9e9	
+
+Last login: Fri Feb 16 02:43:57 2018 from 10.91.192.241
+[admin@CPE-20-Pravin: ~] # </msg>
+<msg timestamp="20180216 10:53:49.284" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:51.284" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:51.285" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:51.386" level="DEBUG">read_channel: 
+[admin@CPE-20-Pravin: ~] # </msg>
+<msg timestamp="20180216 10:53:51.386" level="DEBUG">write_channel: cli
+</msg>
+<msg timestamp="20180216 10:53:51.687" level="DEBUG">read_channel: cli
+
+
+             .---.,
+            (      ``.
+       _     \        )    __      ________ _____   _____
+      (  `.   \      /     \ \    / /  ____|  __ \ / ____|  /\
+       \    `. )    /       \ \  / /| |__  | |__) | (___   /  \
+        \     |    /         \ \/ / |  __| |  _  / \___ \ / /\ \
+         \    |   /           \  /  | |____| | \ \ ____) / ____ \
+          \   |  /             \/   |______|_|  \_\_____/_/    \_\
+           \  | /
+            \_|/                   _  _ ___ _______      _____  ___ _  _____
+                                  | \| | __|_   _\ \    / / _ \| _ \ |/ / __|
+                                  | .` | _|  | |  \ \/\/ / (_) |   / ' &lt;\__ \
+                                  |_|\_|___| |_|   \_/\_/ \___/|_|_\_|\_\___/
+
+
+
+admin connected from 10.91.124.96 using ssh on CPE-20-Pravin
+[?7hadmin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:51.688" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:51.688" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:51.789" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:51.890" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:51.990" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:51.990" level="DEBUG">In disable_paging</msg>
+<msg timestamp="20180216 10:53:51.991" level="DEBUG">Command: set screen length 0
+</msg>
+<msg timestamp="20180216 10:53:51.991" level="DEBUG">write_channel: set screen length 0
+</msg>
+<msg timestamp="20180216 10:53:51.992" level="DEBUG">Pattern is: admin\@CPE\-20\-Pravin\-cli</msg>
+<msg timestamp="20180216 10:53:51.993" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20180216 10:53:52.094" level="DEBUG">_read_channel_expect read_data:  screen length 0
+[ok][2018-02-16 05:20:24]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:52.094" level="DEBUG">Pattern found: admin\@CPE\-20\-Pravin\-cli set screen length 0
+[ok][2018-02-16 05:20:24]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:52.094" level="DEBUG">set screen length 0
+[ok][2018-02-16 05:20:24]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:52.095" level="DEBUG">Exiting disable_paging</msg>
+<msg timestamp="20180216 10:53:52.095" level="DEBUG">write_channel: set screen width 0
+</msg>
+<msg timestamp="20180216 10:53:52.095" level="DEBUG">Pattern is: admin\@CPE\-20\-Pravin\-cli</msg>
+<msg timestamp="20180216 10:53:52.097" level="DEBUG">_read_channel_expect read_data: set</msg>
+<msg timestamp="20180216 10:53:52.197" level="DEBUG">_read_channel_expect read_data:  screen width 0
+[ok][2018-02-16 05:20:24]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:52.197" level="DEBUG">Pattern found: admin\@CPE\-20\-Pravin\-cli set screen width 0
+[ok][2018-02-16 05:20:24]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:52.498" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:57.501" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:57.502" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:57.602" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:57.703" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:57.703" level="INFO">&lt;netmiko.versa.versa_ssh.VersaSSH object at 0x7f9fb924f650&gt;
+versa: admin@CPE-20-Pravin-cli&gt;</msg>
+<msg timestamp="20180216 10:53:57.703" level="INFO">/usr/lib/python2.7/dist-packages/Crypto/Cipher/blockalgo.py:141: FutureWarning: CTR mode needs counter parameter, not IV
+  self._cipher = factory.new(key, *args, **kwargs)</msg>
+<msg timestamp="20180216 10:53:57.704" level="INFO">${cpe2_connection_id} = &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x7f9fb924f650&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:57.704" starttime="20180216 10:53:47.934"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:57.705" level="INFO">${cpe2_connection_id} = &lt;netmiko.versa.versa_ssh.VersaSSH object at 0x7f9fb924f650&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:57.706" starttime="20180216 10:53:57.704"></status>
+</kw>
+<status status="PASS" endtime="20180216 10:53:57.706" starttime="20180216 10:53:47.933"></status>
+</kw>
+<test id="s1-t1" name="CHECK WAN INTERFACE.">
+<kw name="Get Interface Status" library="Commands">
+<doc>Get interface status. Return LAN VRF name and subnet</doc>
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>intf_name=${cpe2_data['MPLS_WAN_INTERFACE']}</arg>
+</arguments>
+<assign>
+<var>${lan_dict}</var>
+</assign>
+<msg timestamp="20180216 10:53:57.709" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:57.709" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:57.809" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:57.910" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.111" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.111" level="DEBUG">write_channel: show interfaces brief vni-0/1.0 | tab
+</msg>
+<msg timestamp="20180216 10:53:58.112" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.312" level="DEBUG">read_channel: show interfaces brief vni-0/1.0 | tab
+NAME       MAC                OPER  ADMIN  TENANT  VRF                    IP              
+------------------------------------------------------------------------------------------
+vni-0/1.0  00:0b:ab:f5:89:74  up    up     2       MPLS-WAN-Transport-VR  172.16.3.21/30  
+
+[ok][2018-02-16 05:20:31]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:58.314" level="INFO">show interfaces brief vni-0/1.0 | tab
+NAME       MAC                OPER  ADMIN  TENANT  VRF                    IP              
+------------------------------------------------------------------------------------------
+vni-0/1.0  00:0b:ab:f5:89:74  up    up     2       MPLS-WAN-Transport-VR  172.16.3.21/30  
+
+[ok][2018-02-16 05:20:31]</msg>
+<msg timestamp="20180216 10:53:58.315" level="INFO">${lan_dict} = {'OPER': 'up', 'NAME': 'vni-0/1.0', 'ADMIN': 'up', 'IP': '172.16.3.21/30', 'MAC': '00:0b:ab:f5:89:74', 'VRF': 'MPLS-WAN-Transport-VR', 'TENANT': '2'}</msg>
+<status status="PASS" endtime="20180216 10:53:58.315" starttime="20180216 10:53:57.707"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['ADMIN']}</arg>
+<arg>${status_up}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.316" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.317" starttime="20180216 10:53:58.315"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['OPER']}</arg>
+<arg>${status_up}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.318" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.318" starttime="20180216 10:53:58.317"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['IP']}</arg>
+<arg>${cpe2_data['MPLS_WAN_INTERFACE_IP']}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.320" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.320" starttime="20180216 10:53:58.319"></status>
+</kw>
+<kw name="Get Interface Status" library="Commands">
+<doc>Get interface status. Return LAN VRF name and subnet</doc>
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>intf_name=${cpe2_data['INTERNET_WAN_INTERFACE']}</arg>
+</arguments>
+<assign>
+<var>${lan_dict}</var>
+</assign>
+<msg timestamp="20180216 10:53:58.322" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.322" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:58.422" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:58.523" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.724" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.724" level="DEBUG">write_channel: show interfaces brief vni-0/2.0 | tab
+</msg>
+<msg timestamp="20180216 10:53:58.725" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.925" level="DEBUG">read_channel: show interfaces brief vni-0/2.0 | tab
+NAME       MAC                OPER  ADMIN  TENANT  VRF                   IP               
+------------------------------------------------------------------------------------------
+vni-0/2.0  00:0b:ab:f5:89:75  up    up     2       INT-WAN-Transport-VR  172.16.2.146/29  
+
+[ok][2018-02-16 05:20:31]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:58.926" level="INFO">show interfaces brief vni-0/2.0 | tab
+NAME       MAC                OPER  ADMIN  TENANT  VRF                   IP               
+------------------------------------------------------------------------------------------
+vni-0/2.0  00:0b:ab:f5:89:75  up    up     2       INT-WAN-Transport-VR  172.16.2.146/29  
+
+[ok][2018-02-16 05:20:31]</msg>
+<msg timestamp="20180216 10:53:58.926" level="INFO">${lan_dict} = {'OPER': 'up', 'NAME': 'vni-0/2.0', 'ADMIN': 'up', 'IP': '172.16.2.146/29', 'MAC': '00:0b:ab:f5:89:75', 'VRF': 'INT-WAN-Transport-VR', 'TENANT': '2'}</msg>
+<status status="PASS" endtime="20180216 10:53:58.926" starttime="20180216 10:53:58.321"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['ADMIN']}</arg>
+<arg>${status_up}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.928" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.928" starttime="20180216 10:53:58.927"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['OPER']}</arg>
+<arg>${status_up}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.929" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.929" starttime="20180216 10:53:58.928"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['IP']}</arg>
+<arg>${cpe2_data['INTERNET_WAN_INTERFACE_IP']}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:58.931" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:58.931" starttime="20180216 10:53:58.930"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="PASS" endtime="20180216 10:53:58.931" critical="yes" starttime="20180216 10:53:57.706"></status>
+</test>
+<test id="s1-t2" name="CHECK LAN INTERFACE.">
+<kw name="Get Interface Status" library="Commands">
+<doc>Get interface status. Return LAN VRF name and subnet</doc>
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>intf_name=${cpe2_data['LAN1_INTERFACE']}</arg>
+</arguments>
+<assign>
+<var>${lan_dict}</var>
+</assign>
+<msg timestamp="20180216 10:53:58.934" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:58.935" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:59.035" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:59.136" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.336" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.337" level="DEBUG">write_channel: show interfaces brief vni-0/4.31 | tab
+</msg>
+<msg timestamp="20180216 10:53:59.337" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.538" level="DEBUG">read_channel: show interfaces brief vni-0/4.31 | tab
+NAME        MAC                OPER  ADMIN  TENANT  VRF       IP               
+-------------------------------------------------------------------------------
+vni-0/4.31  00:0b:ab:f5:89:77  up    up     2       LAN1-VRF  192.120.31.1/24  
+
+[ok][2018-02-16 05:20:32]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:59.539" level="INFO">show interfaces brief vni-0/4.31 | tab
+NAME        MAC                OPER  ADMIN  TENANT  VRF       IP               
+-------------------------------------------------------------------------------
+vni-0/4.31  00:0b:ab:f5:89:77  up    up     2       LAN1-VRF  192.120.31.1/24  
+
+[ok][2018-02-16 05:20:32]</msg>
+<msg timestamp="20180216 10:53:59.539" level="INFO">${lan_dict} = {'OPER': 'up', 'NAME': 'vni-0/4.31', 'ADMIN': 'up', 'IP': '192.120.31.1/24', 'MAC': '00:0b:ab:f5:89:77', 'VRF': 'LAN1-VRF', 'TENANT': '2'}</msg>
+<status status="PASS" endtime="20180216 10:53:59.539" starttime="20180216 10:53:58.933"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['ADMIN']}</arg>
+<arg>up</arg>
+</arguments>
+<msg timestamp="20180216 10:53:59.540" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:59.541" starttime="20180216 10:53:59.540"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['OPER']}</arg>
+<arg>up</arg>
+</arguments>
+<msg timestamp="20180216 10:53:59.542" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:59.542" starttime="20180216 10:53:59.541"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['IP']}</arg>
+<arg>${cpe2_data['LAN1_INTERFACE_IP_WITH_MASK']}</arg>
+</arguments>
+<msg timestamp="20180216 10:53:59.543" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:53:59.544" starttime="20180216 10:53:59.542"></status>
+</kw>
+<kw name="Get Interface Status" library="Commands">
+<doc>Get interface status. Return LAN VRF name and subnet</doc>
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>intf_name=${cpe2_data['LAN2_INTERFACE']}</arg>
+</arguments>
+<assign>
+<var>${lan_dict}</var>
+</assign>
+<msg timestamp="20180216 10:53:59.545" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.546" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:53:59.646" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:53:59.747" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.948" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:53:59.948" level="DEBUG">write_channel: show interfaces brief vni-0/4.32 | tab
+</msg>
+<msg timestamp="20180216 10:53:59.949" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.149" level="DEBUG">read_channel: show interfaces brief vni-0/4.32 | tab
+NAME        MAC                OPER  ADMIN  TENANT  VRF       IP               
+-------------------------------------------------------------------------------
+vni-0/4.32  00:0b:ab:f5:89:77  up    up     2       LAN2-VRF  192.120.32.1/24  
+
+[ok][2018-02-16 05:20:32]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:00.150" level="INFO">show interfaces brief vni-0/4.32 | tab
+NAME        MAC                OPER  ADMIN  TENANT  VRF       IP               
+-------------------------------------------------------------------------------
+vni-0/4.32  00:0b:ab:f5:89:77  up    up     2       LAN2-VRF  192.120.32.1/24  
+
+[ok][2018-02-16 05:20:32]</msg>
+<msg timestamp="20180216 10:54:00.150" level="INFO">${lan_dict} = {'OPER': 'up', 'NAME': 'vni-0/4.32', 'ADMIN': 'up', 'IP': '192.120.32.1/24', 'MAC': '00:0b:ab:f5:89:77', 'VRF': 'LAN2-VRF', 'TENANT': '2'}</msg>
+<status status="PASS" endtime="20180216 10:54:00.150" starttime="20180216 10:53:59.544"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['ADMIN']}</arg>
+<arg>up</arg>
+</arguments>
+<msg timestamp="20180216 10:54:00.152" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:00.152" starttime="20180216 10:54:00.151"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['OPER']}</arg>
+<arg>up</arg>
+</arguments>
+<msg timestamp="20180216 10:54:00.153" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:00.153" starttime="20180216 10:54:00.152"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${lan_dict['IP']}</arg>
+<arg>${cpe2_data['LAN2_INTERFACE_IP']}</arg>
+</arguments>
+<msg timestamp="20180216 10:54:00.155" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:00.155" starttime="20180216 10:54:00.154"></status>
+</kw>
+<status status="PASS" endtime="20180216 10:54:00.155" critical="yes" starttime="20180216 10:53:58.932"></status>
+</test>
+<test id="s1-t3" name="CHECK IPSEC SA.">
+<kw name="Get Ipsec Sa" library="Commands">
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>org=${cpe2_data['ORG_NAME']}</arg>
+<arg>vpn_profile=${cpe2_data['WC1_VPN_PROFILE']}</arg>
+</arguments>
+<assign>
+<var>${sa_dict}</var>
+</assign>
+<msg timestamp="20180216 10:54:00.158" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.159" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:54:00.259" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:00.360" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.560" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.561" level="DEBUG">write_channel: show orgs org-services TEST-PRAVIN-BLR ipsec vpn-profile NV-WC01-N2-BLR-Profile security-associations brief
+</msg>
+<msg timestamp="20180216 10:54:00.561" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.762" level="DEBUG">read_channel: show orgs org-services TEST-PRAVIN-BLR ipsec vpn-profile NV-WC01-N2-BLR-Profile security-associations</msg>
+<msg timestamp="20180216 10:54:00.762" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.963" level="DEBUG">read_channel:  brief
+Remote Gateway   Transform  Inbound SPI  Bytes/sec  Outbound SPI  Bytes/sec  Up Time   Next Rekey Time
+---------------  ---------  -----------  ---------  ------------  ---------  --------  ---------------
+10.60.0.1        aes-cbc    0x2004d2a    100        0x2003c34     0          02:09:06  04:54:54   
+[ok][2018-02-16 05:20:33]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:00.963" level="INFO">Remote Gateway   Transform  Inbound SPI  Bytes/sec  Outbound SPI  Bytes/sec  Up Time   Next Rekey Time
+---------------  ---------  -----------  ---------  ------------  ---------  --------  ---------------
+10.60.0.1        aes-cbc    0x2004d2a    100        0x2003c34     0          02:09:06  04:54:54   
+[ok][2018-02-16 05:20:33]</msg>
+<msg timestamp="20180216 10:54:00.963" level="INFO">${sa_dict} = {'---------------': ['---------', '-----------', '---------', '------------', '---------', '--------', '---------------'], '10.60.0.1': ['aes-cbc', '0x2004d2a', '100', '0x2003c34', '0', '02:09:06', '0...</msg>
+<status status="PASS" endtime="20180216 10:54:00.964" starttime="20180216 10:54:00.157"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${sa_dict}</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:00.965" starttime="20180216 10:54:00.964"></status>
+</kw>
+<kw name="Dictionary Should Contain Key" library="Collections">
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<arguments>
+<arg>${sa_dict}</arg>
+<arg>${cpe2_data['WC1_VXLAN_IP']}</arg>
+<arg>msg= ${cpe2_data['WC1_VXLAN_IP']} IPSEC SA is NOT exist</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:00.966" starttime="20180216 10:54:00.965"></status>
+</kw>
+<status status="PASS" endtime="20180216 10:54:00.967" critical="yes" starttime="20180216 10:54:00.156"></status>
+</test>
+<test id="s1-t4" name="CHECK BGP NEIGHBOR.">
+<kw name="Get Bgp Neighbor" library="Commands">
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>org=${cpe2_data['ORG_NAME']}</arg>
+</arguments>
+<assign>
+<var>${neighbr_dict}</var>
+</assign>
+<msg timestamp="20180216 10:54:00.969" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:00.970" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:54:01.070" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:01.171" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:01.372" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:01.372" level="DEBUG">write_channel: show bgp neighbor org TEST-PRAVIN-BLR brief | match ^[0-9]+
+</msg>
+<msg timestamp="20180216 10:54:01.373" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:01.573" level="DEBUG">read_channel: show bgp neighbor org TEST-PRAVIN-BLR brief | match ^[0-9]+
+</msg>
+<msg timestamp="20180216 10:54:01.574" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:01.774" level="DEBUG">read_channel: 10.60.64.1      08:15:51   Established      15           5      39290        179
+10.60.64.2      09:15:18   Established       5           5      38945        179
+10.60.64.11     n/a        Idle          0           0          0          0
+10.60.64.12     n/a        Idle          0           0          0          0
+169.254.0.3     1w1d20h    Established       1           1        179      51746
+169.254.0.2     1w1d20h    Established       1           1      51746        179
+[ok][2018-02-16 05:20:34]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:01.775" level="INFO">${neighbr_dict} = {'10.60.64.2': ['09:15:18', 'Established', '5', '5', '38945', '179'], '10.60.64.1': ['08:15:51', 'Established', '15', '5', '39290', '179'], '10.60.64.12': ['n/a', 'Idle', '0', '0', '0', '0'], '169.254...</msg>
+<status status="PASS" endtime="20180216 10:54:01.775" starttime="20180216 10:54:00.968"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${neighbr_dict}</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:01.776" starttime="20180216 10:54:01.776"></status>
+</kw>
+<kw name="Dictionary Should Contain Key" library="Collections">
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<arguments>
+<arg>${neighbr_dict}</arg>
+<arg>${cpe2_data['BGP_NBR_IP']}</arg>
+<arg>msg= ${cpe2_data['BGP_NBR_IP']} NBR is NOT exist</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:01.779" starttime="20180216 10:54:01.777"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${neighbr_dict}</arg>
+<arg>${cpe2_data['BGP_NBR_IP']}</arg>
+</arguments>
+<assign>
+<var>${Value}</var>
+</assign>
+<msg timestamp="20180216 10:54:01.780" level="INFO">${Value} = ['09:15:18', 'Established', '5', '5', '38945', '179']</msg>
+<status status="PASS" endtime="20180216 10:54:01.780" starttime="20180216 10:54:01.779"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Value[1]}</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:01.781" starttime="20180216 10:54:01.780"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Value[1]}</arg>
+<arg>${established}</arg>
+<arg>BGP session not established</arg>
+</arguments>
+<msg timestamp="20180216 10:54:01.782" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:01.783" starttime="20180216 10:54:01.782"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${Value[2]}</arg>
+<arg>${zero}</arg>
+<arg>Prefix not recieved</arg>
+</arguments>
+<msg timestamp="20180216 10:54:01.784" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:01.784" starttime="20180216 10:54:01.783"></status>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>${Value[3]}</arg>
+<arg>${zero}</arg>
+<arg>Prefix not sent</arg>
+</arguments>
+<msg timestamp="20180216 10:54:01.785" level="DEBUG">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180216 10:54:01.785" starttime="20180216 10:54:01.784"></status>
+</kw>
+<status status="PASS" endtime="20180216 10:54:01.786" critical="yes" starttime="20180216 10:54:00.967"></status>
+</test>
+<test id="s1-t5" name="CHECK BGP ROUTE .">
+<kw name="Get Route" library="Commands">
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+<arg>routing_instance=${routing_instances[0]}</arg>
+<arg>protocol=${protocols[0]}</arg>
+</arguments>
+<assign>
+<var>${routes_list}</var>
+</assign>
+<msg timestamp="20180216 10:54:01.788" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:01.789" level="DEBUG">write_channel: 
+</msg>
+<msg timestamp="20180216 10:54:01.889" level="DEBUG">read_channel: 
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:01.990" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:02.191" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:02.191" level="DEBUG">write_channel: show route routing-instance LAN1-VRF
+</msg>
+<msg timestamp="20180216 10:54:02.192" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:02.392" level="DEBUG">read_channel: show route routing-instance LAN1-VRF
+
+Routes for Routing instance : LAN1-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      -------------- 
+BGP    N/A  +0.0.0.0/0           169.254.0.2     09:15:47 Indirect
+conn   N/A  +169.254.0.2/31      0.0.0.0         1w1d20h  tvi-0/603.0
+local  N/A  +169.254.0.3/32      0.0.0.0         1w1d20h  directly connected
+BGP    N/A  +192.119.31.0/24     10.60.68.36     00:00:46 Indirect
+conn   N/A  +192.120.31.0/24     0.0.0.0         12:16:22 vni-0/4.31
+</msg>
+<msg timestamp="20180216 10:54:02.393" level="DEBUG">read_channel: </msg>
+<msg timestamp="20180216 10:54:02.593" level="DEBUG">read_channel: local  N/A  +192.120.31.1/32     0.0.0.0         12:16:22 directly connected
+
+
+Routes for Routing instance : LAN1-VRF  AFI: ipv6
+
+[ok][2018-02-16 05:20:35]
+admin@CPE-20-Pravin-cli&gt; </msg>
+<msg timestamp="20180216 10:54:02.594" level="INFO">${routes_list} = [u'BGP    N/A  +0.0.0.0/0           169.254.0.2     09:15:47 Indirect', u'BGP    N/A  +192.119.31.0/24     10.60.68.36     00:00:46 Indirect']</msg>
+<status status="PASS" endtime="20180216 10:54:02.594" starttime="20180216 10:54:01.787"></status>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${routes_list}</arg>
+<arg>msg=route list is empty</arg>
+</arguments>
+<msg timestamp="20180216 10:54:02.596" level="INFO">Length is 2</msg>
+<status status="PASS" endtime="20180216 10:54:02.596" starttime="20180216 10:54:02.595"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${routes_list}</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:02.597" starttime="20180216 10:54:02.596"></status>
+</kw>
+<kw name="Check Route" library="Commands">
+<doc>check_route(routes_list, '192.168.111.0/24', '10.60.68.31', 'Indirect')</doc>
+<arguments>
+<arg>${routes_list}</arg>
+<arg>dest_address=${cpe1_data['LAN1_ROUTE']}</arg>
+<arg>next_hop=${cpe1_data['ESP_IP']}</arg>
+<arg>intf_name=${indirect}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20180216 10:54:02.599" level="INFO">--------------------
+BGP    N/A  +192.119.31.0/24     10.60.68.36     00:00:46 Indirect
+--------------------</msg>
+<msg timestamp="20180216 10:54:02.599" level="INFO">${result} = True</msg>
+<status status="PASS" endtime="20180216 10:54:02.599" starttime="20180216 10:54:02.597"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>msg=route not present</arg>
+</arguments>
+<status status="PASS" endtime="20180216 10:54:02.600" starttime="20180216 10:54:02.600"></status>
+</kw>
+<tags>
+<tag>check</tag>
+</tags>
+<status status="PASS" endtime="20180216 10:54:02.601" critical="yes" starttime="20180216 10:54:01.786"></status>
+</test>
+<kw type="teardown" name="Stop_Suite" library="Resource">
+<doc>Close connection - Versa devices</doc>
+<kw name="Close Connection" library="Connect_devices">
+<arguments>
+<arg>${cpe2_connection_id}</arg>
+</arguments>
+<msg timestamp="20180216 10:54:02.718" level="INFO">&lt;netmiko.versa.versa_ssh.VersaSSH object at 0x7f9fb924f650&gt; connection closed</msg>
+<status status="PASS" endtime="20180216 10:54:02.718" starttime="20180216 10:54:02.603"></status>
+</kw>
+<status status="PASS" endtime="20180216 10:54:02.718" starttime="20180216 10:54:02.602"></status>
+</kw>
+<doc>A test suite with tests for SDWAN LAN conenctivity.
+Topology:-
+____________________________
+| VersaDirector |
+|___________________________|
+|
+|
+|
+_____________|_______________
+| WanCtrller1 |
+|____________________________|
+| |
+| |
+| |
+INTERNET/MPLS
+| |
+| |___
+______|__ ___|___
+| | | |
+LAN1--+ CPE1 | | CPE2 +--LAN1
+|________| |_______|
+
+
+Testplan Goals:-
+1. CHECK IF IP ADDRESS IS SET AND INTERFACE IS UP.</doc>
+<metadata>
+<item name="Version">1.0
+More Info For more information about Robot Framework see http://robotframework.org
+Author Sathishkumar murugesan
+Date 12 Dec 2017
+Executed At HOST
+Test Framework Robot Framework Python</item>
+</metadata>
+<status status="PASS" endtime="20180216 10:54:02.718" starttime="20180216 10:53:47.450"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">check</stat>
+<stat fail="0" pass="1">sanity</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="SANITY TEST" pass="5">SANITY TEST</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
